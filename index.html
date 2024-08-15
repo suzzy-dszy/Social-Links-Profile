@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <style>
+      @font-face {
+        font-family: Inter;
+        src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf)
+          format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+      }
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      body {
+        font-family: "Inter";
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: hsl(0, 0%, 8%);
+        color: #fff;
+      }
+
+      p {
+        font-size: 14px;
+        color: hsl(0, 0%, 75%);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+        background-color: hsl(0, 0%, 12%);
+        border-radius: 20px;
+      }
+
+      .user-avatar {
+        height: 10rem;
+        border-radius: 50%;
+        display: block;
+      }
+
+      .user-name {
+        margin-bottom: 0%;
+      }
+
+      .user-location {
+        color: #de5132;
+        margin: 5% 0;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img
+          class="user-avatar"
+          src="./assets/images/PFP.jpeg"
+          alt="Astronaut-avatar"
+        />
+        <h1 class="user-name">Sunay Dagar</h1>
+        <h2 class="user-location">Nairobi, Kenya</h2>
+        <p>"Front-end Developer and casual gamer🎮"</p>
+        <br />
+      </div>
+        <!-- links, try grid -->
+      
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sunay Dagar</a>.
+      </div>
+    </footer>
+  </body>
 </html>
