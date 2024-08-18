@@ -52,6 +52,7 @@
         padding: 0.5rem 3.5rem 0.5rem 3.5rem;
         background-color: hsl(0, 0%, 12%);
         border-radius: 20px;
+        transition: box-shadow ease-in-out 1s;
       }
 
       .user-avatar {
@@ -77,6 +78,9 @@
       }
 
       .link-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         background-color: hsl(0, 0%, 20%);
         border: none;
@@ -84,6 +88,15 @@
         padding: 0.5rem;
         cursor: pointer;
         width: 100%;
+      }
+
+      .logo {
+        width: 16px;
+        height: 16px;
+      }
+
+      .link-btn img {
+        margin-right: 0.5rem;
       }
 
       .link-text {
@@ -97,6 +110,29 @@
 
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+
+      .container:hover {
+        box-shadow: 10px 10px #de52328e;
+      }
+
+      .github:hover{
+        background: linear-gradient(300deg,#E2BFD9, #674188)
+      }
+
+      .frontendmentor:hover{
+        background: linear-gradient(300deg,#6fa2b0, #beaf9d );
+      }
+      
+      @media (max-width: 560px) {
+        .container {
+          width: 60vw;
+          height: 70vh;
+        }
+
+        .grid-container {
+          width: 70vw;
+        }
       }
     </style>
   </head>
@@ -113,14 +149,23 @@
         <p>"Front-end Developer and casual gamer🎮"</p>
         <br />
         <div class="grid-container">
-          <a class="link-text" href="https://github.com/suzzy-dszy"
-            ><button class="link-btn">Github</button>
+          <a class="link-text" href="https://github.com/suzzy-dszy">
+            <button class="link-btn github">
+              <img src="./assets/images/github.svg" alt="github logo" />
+              Github
+            </button>
           </a>
 
           <a
             class="link-text"
             href="https://www.frontendmentor.io/profile/suzzy-dszy"
-            ><button class="link-btn">Frontend Mentor</button></a
+            ><button class="link-btn frontendmentor">
+              <img
+                class="logo"
+                src="./assets/images/Frontend logo.png"
+                alt="frontendmentor logo"
+              />Frontend Mentor
+            </button></a
           >
         </div>
       </div>
