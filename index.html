@@ -124,6 +124,12 @@
         background: linear-gradient(100deg, #61919f, #beaf9d);
       }
 
+      :focus {
+        outline: 2px solid #de5132; /* Or any color that matches your theme */
+        outline-offset: 4px;
+        border-radius: 5px;
+      }
+
       @media (max-width: 560px) {
         .container {
           width: 60vw;
@@ -150,7 +156,7 @@
         <br />
         <div class="grid-container">
           <a class="link-text" href="https://github.com/suzzy-dszy">
-            <button class="link-btn github">
+            <button class="link-btn github" tabindex="-1">
               <img src="./assets/images/github.svg" alt="github logo" />
               Github
             </button>
@@ -159,7 +165,7 @@
           <a
             class="link-text"
             href="https://www.frontendmentor.io/profile/suzzy-dszy"
-            ><button class="link-btn frontendmentor">
+            ><button class="link-btn frontendmentor" tabindex="-1">
               <img
                 class="logo"
                 src="./assets/images/Frontend logo.png"
