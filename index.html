@@ -69,6 +69,27 @@
         margin: 5% 0;
       }
 
+      .grid-container {
+        width: 120%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .link-btn {
+        color: #fff;
+        background-color: hsl(0, 0%, 20%);
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .link-text {
+        text-decoration: none;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -91,9 +112,18 @@
         <h2 class="user-location">Nairobi, Kenya</h2>
         <p>"Front-end Developer and casual gamer🎮"</p>
         <br />
+        <div class="grid-container">
+          <a class="link-text" href="https://github.com/suzzy-dszy"
+            ><button class="link-btn">Github</button>
+          </a>
+
+          <a
+            class="link-text"
+            href="https://www.frontendmentor.io/profile/suzzy-dszy"
+            ><button class="link-btn">Frontend Mentor</button></a
+          >
+        </div>
       </div>
-        <!-- links, try grid -->
-      
     </main>
 
     <footer>
